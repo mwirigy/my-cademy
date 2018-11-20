@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
     
   def username
-    return "#{user_name}".strip if (user_name)
-    "Anonymous"
+    return "#{user_name}".strip
+    
   end
 end
