@@ -16,3 +16,14 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$(window).scroll(function(){
+    var x = document.getElementById("nav-custom")
+    if ($(window).scrollTop() >= 30) {
+        
+      x = $('#nav-custom').addClass('shadow-header');
+    }
+    else {
+        x = $('#nav-custom').removeClass('shadow-header');
+    }
+});

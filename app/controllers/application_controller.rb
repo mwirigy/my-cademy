@@ -4,5 +4,6 @@ class ApplicationController < ActionController::Base
         user_root_path(resource)
       end
       
+  
     
 end
