@@ -11,7 +11,7 @@
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <!-- Size should be 144 x 144 pixels -->
-    
+
 
     <%= javascript_include_tag "application" %>
 
@@ -22,25 +22,27 @@
   </head>
   <body>
      <%= render 'layouts/navigation'%>
-    
+
     <% if current_page?(root_path) %>
       <%= render 'layouts/header' %>
-  
-    <% end %>
-   
-    
 
-    
-      
-       
-          <%= bootstrap_flash %>
+    <% end %>
+
+
+
+
+
+       <div class="container">
+         <%= bootstrap_flash %>
+       </div>
+
           <%= yield %>
-       
-        
-     
+
+
+
 
       <%= render 'layouts/footer'%>
-    
+
 
   </body>
 </html>

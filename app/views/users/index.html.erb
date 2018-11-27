@@ -1,1 +1,27 @@
-<h1>Thi is the <%= current_user.user_name %> Homepage</h1>
+<div class="container">
+  <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><%= link_to "Home", "#home", role: "tab", data: { toggle: "tab"}, class: "nav-link " %></li>
+    <li role="presentation"><%= link_to "Assignments", "#profile", role: "tab", data: { toggle: "tab"}, class: "nav-link" %></li>
+    <li role="presentation"><%= link_to "E Classes", "#contact", role: "tab", data: { toggle: "tab"}, class: "nav-link" %></li>
+
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <%= render 'users/home' %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+      <%= render 'users/assignments' %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="contact">
+      <%= render 'users/eclasses' %>
+    </div>
+
+  </div>
+
+</div>
+</div>

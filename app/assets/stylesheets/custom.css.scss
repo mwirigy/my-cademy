@@ -11,16 +11,16 @@ body {
     border-radius: 0;
     min-height: 70px;
     padding: 10px 0;
-    
+
 }
 .navbar-default {
     background: rgb(67, 162, 240);
-    
+
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
     color: #fff;
-    
+
 }
 
 .navbar-nav>li>a {
@@ -61,7 +61,7 @@ body {
 
 
 .navbar-home a {
-   
+
     color: rgb(60, 116, 236);
 }
 
@@ -90,9 +90,9 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    
-    
-    
+
+
+
 }
 
 
@@ -110,7 +110,7 @@ body {
 .search-container{
     width: 400px;
     display: block;
-    
+
   }
 
   input#search-bar{
@@ -133,21 +133,21 @@ body {
       color: rgb(255, 255, 255);
   }
   input#search-bar:focus::-webkit-input-placeholder{
-        transition: opacity 0.45s ease; 
+        transition: opacity 0.45s ease;
           opacity: 0;
        }
     input#search-bar:focus::-moz-placeholder {
-    transition: opacity 0.45s ease; 
+    transition: opacity 0.45s ease;
         opacity: 0;
     }
     input#search-bar:focus:-ms-placeholder {
-    transition: opacity 0.45s ease; 
+    transition: opacity 0.45s ease;
         opacity: 0;
-    }  
+    }
     input#search-bar::placeholder {
         color: #4983db;
-    }  
-     
+    }
+
    .search-icon{
     position: relative;
     float: right;
@@ -236,7 +236,7 @@ body {
     font-weight: 600;
     line-height: 20px;
     padding: 10px 20px;
-    
+
     color: #304ffe;
 }
 
@@ -247,7 +247,7 @@ body {
     font-weight: 400;
     line-height: 20px;
     padding: 10px 20px;
-    
+
     color: #90a0ff;
 }
 .bottom-signup {
@@ -269,23 +269,23 @@ body {
     font-weight: 600;
     line-height: 20px;
     padding: 10px 20px;
-    
+
     color: #304ffe;
 }
 
 .signup-content h6 {
-    
+
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     padding: 10px 20px;
-    
+
     color: #798dfc;
 }
 
 .signup-content .btn{
-    
+
    width: 200px;
    background-color: #00e676;
    border: 0;
@@ -339,7 +339,7 @@ body {
 .footer-list ul li {
     margin-top: 15px;
     color: #757575;
-} 
+}
 
 .footer-right {
     text-align: center;
@@ -352,4 +352,39 @@ body {
 
 .bg-dark {
     background-color: rgb(245, 245, 245);
+}
+
+
+//User Profile css
+.profile-btn {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 5px;
+    width: 45%;
+    margin-top: 12px;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.img-thumb {
+  display: inline-block;
+max-width: 100%;
+height: auto;
+padding: 4px;
+line-height: 1.42857143;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+.pad-100 {
+  padding: 40px;
+}
+
+.profile-info {
+  padding-top: 70px;
 }
