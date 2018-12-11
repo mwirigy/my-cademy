@@ -6,6 +6,27 @@ body {
     background-color: #fbfbfb;
 }
 
+.notice-wrapper{
+  width: 100%;
+
+  position: absolute;
+
+  z-index: 999;
+  opacity: 0.8;
+  div {
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    button {
+      display: none;
+    }
+  }
+
+
+}
+
 .navbar {
     border: 0;
     border-radius: 0;
