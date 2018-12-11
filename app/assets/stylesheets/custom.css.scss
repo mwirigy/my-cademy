@@ -11,6 +11,7 @@ body {
     border-radius: 0;
     min-height: 70px;
     padding: 10px 0;
+    margin: 0;
 
 }
 .navbar-default {
@@ -355,36 +356,37 @@ body {
 }
 
 
-//User Profile css
-.profile-btn {
-  border: none;
-  border-radius: 1.5rem;
-  padding: 5px;
-    width: 45%;
-    margin-top: 12px;
-  font-weight: 600;
-  color: #6c757d;
-  cursor: pointer;
+.sidebar {
+
+  min-height: 800px;
+  background: #f1f1f1;
+
+
+
 }
 
-.circle {
-  border-radius: 50%;
+//sidebar
+.nav-sidebar {
+  padding-top: 30px;
+  text-align: center;
 }
 
-.img-thumb {
-  display: inline-block;
-max-width: 100%;
-height: auto;
-padding: 4px;
-line-height: 1.42857143;
-background-color: #fff;
-border: 1px solid #ddd;
+.nav-sidebar>li>a {
+  color: #37474f;
 }
 
-.pad-100 {
-  padding: 40px;
+.nav-sidebar>li.active a {
+  color: #00b0ff;
+  background-color: #e2f6ff;
+  border-right: 2px solid #00b0ff;
 }
 
-.profile-info {
-  padding-top: 70px;
+.no-pad {
+  padding: 0;
+}
+
+//assignment
+
+.assignment-action {
+  background-color: #ffffff;
 }

@@ -1,27 +1,23 @@
-<div class="container">
-  <div>
+<div class="container-fluid no-pad">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><%= link_to "Home", "#home", role: "tab", data: { toggle: "tab"}, class: "nav-link " %></li>
-    <li role="presentation"><%= link_to "Assignments", "#profile", role: "tab", data: { toggle: "tab"}, class: "nav-link" %></li>
-    <li role="presentation"><%= link_to "E Classes", "#contact", role: "tab", data: { toggle: "tab"}, class: "nav-link" %></li>
+    <!-- Nav tabs -->
 
-  </ul>
+      <div class="col-sm-3 col-md-2 no-pad">
+        <%= render 'users/sidebar' %>
+      </div>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
-      <%= render 'users/home' %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="profile">
-      <%= render 'users/assignments' %>
-    </div>
-    <div role="tabpanel" class="tab-pane" id="contact">
-      <%= render 'users/eclasses' %>
-    </div>
-
-  </div>
-
-</div>
+    <!-- Tab panes -->
+      <div class="col-sm-9 col-md-10">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="assignments">
+            <%= render 'users/assignments' %>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="eclasses">
+            <%= render 'users/eclasses' %>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="resources">
+            <%= render 'users/resources' %>
+          </div>
+        </div>
+      </div>
 </div>
